@@ -1,0 +1,36 @@
+:root{color-scheme:dark;--ink:#f3f2ec;--muted:#9b9b96;--bg:#0d0e0d;--panel:#161816;--line:#343833;--lime:#d2f36b;--red:#f26c5b;font-family:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -18%,#293022 0,transparent 48%),var(--bg);color:var(--ink)}
+a{color:var(--lime);text-underline-offset:4px}
+.wrap{max-width:740px;margin:0 auto;padding:26px 20px 54px}
+.topline{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0 18px;color:var(--muted);font-family:'Courier New',monospace;font-size:11px;letter-spacing:.11em;text-transform:uppercase}
+.brand{display:flex;gap:10px;align-items:center;color:var(--ink)}
+.mark{display:grid;place-items:center;width:25px;height:25px;border:1px solid var(--lime);color:var(--lime);font-size:14px;font-weight:700}
+.status{display:flex;align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 10px #f26c5b66}
+main{padding:52px 0 0}
+.eyebrow{color:var(--lime);font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+h1{max-width:610px;margin:13px 0 12px;font-size:clamp(40px,9vw,74px);line-height:.98;letter-spacing:-.065em}
+.intro{max-width:570px;color:#c1c2bb;font-size:17px;line-height:1.6}
+.meta{display:grid;grid-template-columns:1fr 1fr;margin:30px 0 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta-item{padding:15px 16px 15px 0}.meta-item+ .meta-item{border-left:1px solid var(--line);padding-left:16px}
+.label{display:block;margin-bottom:7px;color:var(--muted);font-family:'Courier New',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.value{font-size:15px;font-weight:600}
+.card{padding:24px;border:1px solid var(--line);border-radius:5px;background:linear-gradient(145deg,#1a1d18,#121412 68%);box-shadow:0 18px 50px #0004}
+.card h2{margin:0 0 5px;font-size:22px;letter-spacing:-.03em}
+.sub{margin:0 0 22px;color:var(--muted);font-size:13px;line-height:1.5}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+label{font-family:'Courier New',monospace;font-size:11px;color:#d4d5cc}
+input{width:100%;padding:13px 14px;border:1px solid #464b43;border-radius:3px;background:#101210;color:var(--ink);font:inherit;font-size:15px;outline:none}
+input:focus{border-color:var(--lime);box-shadow:0 0 0 2px #d2f36b20}
+input::placeholder{color:#777a72}
+button{width:100%;margin-top:17px;padding:15px 18px;border:0;border-radius:3px;background:var(--lime);color:#15180f;font:700 14px Arial,Helvetica,sans-serif;letter-spacing:.02em;cursor:not-allowed;opacity:.68}
+.notice{margin:13px 0 0;color:#b6b7ae;font-size:12px;line-height:1.55}
+.safety{display:flex;gap:12px;margin:23px 0 0;padding:16px 17px;border-left:2px solid var(--lime);background:#d2f36b0b;color:#c4c6bc;font-size:13px;line-height:1.6}
+.safety strong{display:block;margin-bottom:2px;color:var(--ink);font-size:12px}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;font-size:13px}
+footer{display:flex;justify-content:space-between;gap:14px;margin-top:34px;padding-top:15px;border-top:1px solid var(--line);color:var(--muted);font-family:'Courier New',monospace;font-size:10px;letter-spacing:.06em}
+.rules-list{padding-left:19px;color:#c4c6bc;line-height:1.8}
+.small-note{margin-top:28px;padding:13px;border:1px dashed #51564b;color:#b8b9b0;font-size:12px;line-height:1.55}
+@media(max-width:560px){.wrap{padding:18px 16px 36px}main{padding-top:38px}.card{padding:18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.topline{font-size:9px}.meta-item{padding-right:10px}.meta-item+.meta-item{padding-left:10px}footer{flex-direction:column}}
